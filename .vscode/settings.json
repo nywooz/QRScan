@@ -1,4 +1,7 @@
 {
   "editor.fontSize": 12,
-  "editor.formatOnPaste": true
+  "markdown.preview.fontSize": 12,
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
 }

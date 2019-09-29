@@ -21,13 +21,6 @@ let preloaderScan;
 registerDomElements();
 addEvListener();
 startScanner();
-initResponsiveCanvas();
-
-function initResponsiveCanvas() {
-  var c = canvasElement;
-  var heightRatio = 1.5;
-  canvasElement.height = canvasElement.width * heightRatio;
-}
 
 function addEvListener() {
   scanBtn.addEventListener("click", startScanner);
