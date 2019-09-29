@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid pt-3">
+    <div class="row">
+      <div class="col-auto mr-auto">
+        <h5>QR Code Scanner</h5>
+      </div>
+      <div class="col-auto">
+        <button id="scan" type=button class="btn btn-info mb-1" style="width: 200px;">Scanning</button>
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+
+  </div>
+
+  <div class="container-fluid pt-3">
+
+
+    <div id="loadingMessage">⌛ Loading video...</div>
+    <div class="preloader-scan">
+      <div class="laser"></div>
+      <div class="embed-responsive embed-responsive-1by1">
+        <canvas id="canvas" class="embed-responsive-item"></canvas>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid pt-3">
+
+
+
+    <div id="output" class="" hidden="">
+      <div class="alert alert-dark mt-2" id="outputMessage" role="alert">
+        No QR code detected.
+      </div>
+
+      <div class="alert alert-success" hidden="" role="alert">
+        <b>Link:</b>
+        <span id="outputData"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <img alt="qrcode" src="src/img/1.svg" width="100" height="100" class="qrcode"></img>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>

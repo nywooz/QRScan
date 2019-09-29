@@ -1,0 +1,66 @@
+body {
+  font-family: "Ropa Sans", sans-serif;
+  color: #333;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#loadingMessage {
+  text-align: center;
+  padding: 40px;
+  background-color: #eee;
+}
+
+.qrcode {
+  position: fixed;
+  bottom: 0;
+}
+
+.responsive-canvas {
+  width: 100%;
+}
+
+/* Scanner animation */
+
+.preloader-scan,
+.preloader-scanned {
+  margin: 0 auto;
+}
+
+.preloader-scan .laser {
+  width: 100%;
+  background-color: tomato;
+  height: 2px;
+  box-shadow: 0 0 4px red;
+  -webkit-animation: scanning 2s infinite;
+  animation: scanning 2s infinite;
+}
+.preloader-scan .diode {
+  -webkit-animation: beam 0.01s infinite;
+  animation: beam 0.01s infinite;
+}
+
+@-webkit-keyframes beam {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes beam {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scanning {
+  50% {
+    -webkit-transform: translateY(480px);
+    transform: translateY(480px);
+  }
+}
+@keyframes scanning {
+  50% {
+    -webkit-transform: translateY(480px);
+    transform: translateY(480px);
+  }
+}

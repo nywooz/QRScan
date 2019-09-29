@@ -1,2 +1,0 @@
-# QRScan
-Created with CodeSandbox
