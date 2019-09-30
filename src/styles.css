@@ -1,8 +1,8 @@
 body {
   font-family: "Ropa Sans", sans-serif;
   color: #333;
-  max-width: 90%;
-  margin: 0 auto;
+  /* max-width: 90%;
+  margin: 0 auto; */
   position: relative;
 }
 
@@ -12,20 +12,10 @@ body {
   background-color: #eee;
 }
 
-.qrcode {
-  position: fixed;
-  bottom: 0;
-}
-
-.responsive-canvas {
-  width: 100%;
-}
-
 /* Scanner animation */
 
 .preloader-scan,
 .preloader-scanned {
-  margin: 0 auto;
 }
 
 .preloader-scan .laser {
@@ -35,6 +25,8 @@ body {
   box-shadow: 0 0 4px red;
   -webkit-animation: scanning 2s infinite;
   animation: scanning 2s infinite;
+  position: relative;
+  z-index: 2;
 }
 .preloader-scan .diode {
   -webkit-animation: beam 0.01s infinite;
@@ -54,13 +46,47 @@ body {
 }
 @-webkit-keyframes scanning {
   50% {
-    -webkit-transform: translateY(480px);
-    transform: translateY(480px);
+    -webkit-transform: translateY(100vw);
+    transform: translateY(100vw);
   }
 }
 @keyframes scanning {
   50% {
-    -webkit-transform: translateY(480px);
-    transform: translateY(480px);
+    -webkit-transform: translateY(100vw);
+    transform: translateY(100vw);
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* .embed-responsive {
+    height: 100vh;
+    min-height: 100%;
+  } */
+
+  .qrcode {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.qrcode {
+  position: fixed;
+  bottom: 0;
 }

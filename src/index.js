@@ -12,7 +12,6 @@ let video;
 let canvasElement;
 let canvas;
 let loadingMessage;
-let outputContainer;
 let outputMessage;
 let outputData;
 let scanBtn;
@@ -38,7 +37,6 @@ function registerDomElements() {
   canvasElement = document.getElementById("canvas");
   canvas = canvasElement.getContext("2d");
   loadingMessage = document.getElementById("loadingMessage");
-  outputContainer = document.getElementById("output");
   outputMessage = document.getElementById("outputMessage");
   outputData = document.getElementById("outputData");
   preloaderScan = document.querySelector(".preloader-scan");
@@ -55,7 +53,7 @@ function drawLine(begin, end, color) {
 }
 
 function startScanner() {
-  scanBtn.innerText = "Scanning";
+  scanBtn.innerText = "Scanning...";
   scanBtn.className = "btn btn-info mb-1";
   state.enableScan = true;
 
@@ -77,7 +75,6 @@ function tick() {
   if (video.readyState === video.HAVE_ENOUGH_DATA) {
     loadingMessage.hidden = true;
     canvasElement.hidden = false;
-    outputContainer.hidden = false;
 
     canvasElement.height = video.videoHeight;
     canvasElement.width = video.videoWidth;
