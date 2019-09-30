@@ -23,11 +23,28 @@
 
 
 
-    <div class="menu-bar row m-0 ">
-      <div class="alert alert-success border-0 shadow-sm p-2  rounded"  role="alert">
-        <b>Link:<span id="outputData"></span></b>        
-        <button id="scan" type=button class="btn btn-info mb-1" style="width: 200px;">Scanning...</button>
+    <div class="menu-bar row mt-2">
+      <div class="col-auto mr-auto">
+        <div class="alert alert-success border-0 shadow-sm p-1 rounded" hidden="" role="alert">
+          <b>URL:<span id="outputData"></span></b>
+        </div>
       </div>
+
+
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroup">URL</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">URL</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Scanning..">
+        </div>
+      </div>
+
+
+      <div class="col-auto"> <button id="scan" type=button class="btn btn-info mb-1">Scanning...</button>
+      </div>
+
     </div>
 
   </div>

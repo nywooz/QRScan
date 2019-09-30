@@ -110,7 +110,7 @@ function tick() {
         state.color
       );
       if (outputMessage) outputMessage.hidden = true;
-      outputData.parentElement.hidden = false;
+      outputData.parentElement.parentElement.hidden = false;
       outputData.innerText = code.data;
 
       if (code.data && code.data.includes("https:")) {
@@ -129,7 +129,7 @@ function tick() {
       scanBtn.disabled = true;
       //scanBtn.setAttribute("disabled", "");
       if (outputMessage) outputMessage.hidden = false;
-      outputData.parentElement.hidden = true;
+      outputData.parentElement.parentElement.hidden = true;
     }
   }
   requestAnimationFrame(tick);
