@@ -16,36 +16,20 @@
     <div id="loadingMessage">⌛ Loading video...</div>
     <div class="preloader-scan">
       <div class="laser"></div>
-      <div class="embed-responsive embed-responsive-1by1">
+      <div class="embed-responsive embed-responsive-4by3">
         <canvas id="canvas" class="embed-responsive-item"></canvas>
       </div>
     </div>
 
 
-    <div class="row pt-3">
-      <div class="col-auto mr-auto">
-        <!-- <h5>QR Code Scanner</h5> -->
-      </div>
-      <div class="col-auto">
-        <button id="scan" type=button class="btn btn-info mb-1" style="width: 200px;">Scanning</button>
-      </div>
-    </div>
 
-    <div class="row">
-    </div>
-
-
-
-    <div id="output" class="">
-      <div class="alert alert-dark mt-2 border-0 shadow-sm p-3 mb-5 rounded" id="outputMessage" role="alert">
-        No QR code detected.
-      </div>
-
-      <div class="alert alert-success mt-2 border-0 shadow-sm p-3 mb-5 rounded" hidden="" role="alert">
-        <b>Link:</b>
-        <span id="outputData"></span>
+    <div class="menu-bar row m-0 ">
+      <div class="alert alert-success border-0 shadow-sm p-2  rounded"  role="alert">
+        <b>Link:<span id="outputData"></span></b>        
+        <button id="scan" type=button class="btn btn-info mb-1" style="width: 200px;">Scanning...</button>
       </div>
     </div>
+
   </div>
 
 

@@ -109,7 +109,7 @@ function tick() {
         code.location.topLeftCorner,
         state.color
       );
-      outputMessage.hidden = true;
+      if (outputMessage) outputMessage.hidden = true;
       outputData.parentElement.hidden = false;
       outputData.innerText = code.data;
 
@@ -128,7 +128,7 @@ function tick() {
       state.enableScan = true;
       scanBtn.disabled = true;
       //scanBtn.setAttribute("disabled", "");
-      outputMessage.hidden = false;
+      if (outputMessage) outputMessage.hidden = false;
       outputData.parentElement.hidden = true;
     }
   }
