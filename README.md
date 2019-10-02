@@ -1,27 +1,27 @@
 
 # QRScanner
 
-## A pure javascript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within https://nywooz.github.io/QRScan/
+### A pure javascript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within https://nywooz.github.io/QRScan/
 
-# Installation
+## Installation
 ```
 npm i
 ```
 
-# run development environment
+## run development environment
 ```
 npm run start
 ```
 
-# run build
+## run build
 ```
 npm run build
 ```
 
-# Description
+## Description
 I'm looking for QR Scan web page where it should works perfectly in all mobile browsers and inappbrowser.
 
-# Requirement
+## Requirement
 1. Get an open-source javascript library that scans QR codes (you can find them on Github)
 2. Use the demo code (Reference link: https://qrscanneronline.com/) to create a web page
 3. Click a button to start the device camera
