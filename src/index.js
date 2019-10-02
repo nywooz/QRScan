@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const state = {
   date: new Date(),
   link: "",
