@@ -1,5 +1,4 @@
-require("./styles.css");
-const jsQR = require("jsqr");
+import "./styles.css";
 
 const state = {
   date: new Date(),

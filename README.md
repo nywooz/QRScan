@@ -1,3 +1,23 @@
+
+# QRScanner
+
+## A pure javascript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within https://nywooz.github.io/QRScan/
+
+# Installation
+```
+npm i
+```
+
+# run development environment
+```
+npm run start
+```
+
+# run build
+```
+npm run build
+```
+
 # Description
 I'm looking for QR Scan web page where it should works perfectly in all mobile browsers and inappbrowser.
 
@@ -10,5 +30,3 @@ I'm looking for QR Scan web page where it should works perfectly in all mobile b
 6. Display the contents of the QR code on the screen (eg, print text on the web page)
 It must work on iPhone and Android mobile browsers, plus normal desktop browsers like Firefox and Chrome (don't worry about IE, which is useless).
 
-
-## Demo site - https://nywooz.github.io/QRScan/
