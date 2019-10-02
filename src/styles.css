@@ -57,6 +57,11 @@ body {
   .embed-responsive {
     height: 100vh;
   }
+
+  .menu-bar {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -73,6 +78,6 @@ body {
 /* TESTING HELPER */
 .qrcode {
   position: fixed;
-  bottom: 0;
+  bottom: 0;  
   display: none;
 }
