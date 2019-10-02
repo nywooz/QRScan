@@ -11,4 +11,4 @@ I'm looking for QR Scan web page where it should works perfectly in all mobile b
 It must work on iPhone and Android mobile browsers, plus normal desktop browsers like Firefox and Chrome (don't worry about IE, which is useless).
 
 
-Demo site - https://nywooz.github.io/QRScan/
+## Demo site - https://nywooz.github.io/QRScan/
